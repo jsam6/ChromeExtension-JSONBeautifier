@@ -1,0 +1,15 @@
+{
+	"name":"Json Extension",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "This is a JSON Beautifier extension.",
+	"browser_action": {
+		"default_icon":"static/img/json-icon.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [{
+		"js": ["main.js", "main.js"],
+		"matches": ["http://*/*", "https://*/*"]
+	}]
+
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Json Beautifier</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="static/style.css">
+	<!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="static/css/nifty.min.css" rel="stylesheet">
+    
+    <link href="static/premium/icon-sets/icons/line-icons/premium-line-icons.min.css" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+	<div id="page-content">
+		<div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">JSON Beautifier & Minifier</h3>
+            </div>
+
+            <!--No Label Form-->
+            <!--===================================================-->
+            <form class="form-horizontal">
+                
+                <div class="panel-body">
+                    <div class="row">
+                        
+                    </div>
+                    <textarea placeholder="Drag n Drop or Input JSON here." rows="13" class="form-control" id="user_input"></textarea>
+                </div>
+                
+                <div class="panel-footer text-right">
+                    <button id="btn-clear" type="submit" class="btn bg-gray pull-left btn-icon btn-circle"  onfocus="clearContents(this);">
+                        <i class="pli-cross"></i>
+                    </button>
+
+                    <button id='minify-generate' type="submit" class="btn btn-default bg-info" >Minify</button>
+                    <button id='beautify-generate' type="submit" class="btn btn-default bg-mint" >Beautify</button>
+                    
+                    <!-- <button id='beautify-generate' type="submit" class="btn btn-default" onclick="takeValue()">Beautify</button> -->
+                </div>
+            </form>
+            <!--===================================================-->
+            <!--End No Label Form-->
+
+        </div>
+
+
+	</div>
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="static/js/jquery.min.js"></script>
+
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="static/js/bootstrap.min.js"></script>
+
+
+    <!--NiftyJS [ RECOMMENDED ]-->
+    <script src="static/js/nifty.min.js"></script>
+
+    <script src="main.js">
+        
+
+        // $(document).ready(function() {
+        //     $("#beautify-generate").click(function(e) { e.preventDefault()
+        //         $.ajax({
+        //             type: 'POST',
+        //             url:'http://127.0.0.1:8000/',
+        //             data:{
+        //                     json_input: document.getElementById('user_input').value
+        //                 // csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+        //             },
+        //             success: function (result){
+        //                 // alert(result);
+        //                 result = result
+        //                 document.getElementById('user_input').value=result
+        //             }
+        //         })
+        //     });
+        // });
+    </script>
+
+	
+	
+
+
+</body>
+</html>
