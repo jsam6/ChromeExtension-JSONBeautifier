@@ -6,89 +6,32 @@ ChromeExtension - JSONBeautifier
 
 This project is a Chrome Extension which enables user to format (Beautify/Minify) JSON while still using the browser. Unlike opening up an editor which may consume time this project aims to overcome said obstacles.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
+1. Python
+1. Django web framework (backend)
+1. HTML + CSS + JS + AJAX
 
+### Method
+Django works as a backend API that gets called whenever a json file needs formatting from the Chrome Extension.
 
-![alt text](https://raw.githubusercontent.com/jsam6/ToDoAndroidApp/master/notes-img/screenshot-1.PNG "Screenshot 1")
+### Screenshot
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+1. Icon of ChromeExtension-JSONBeautifier will appear on the top right of Chrome browser when it is enabled.
 
-## Contributing
+<img align="center" src="https://raw.githubusercontent.com/jsam6/ChromeExtension-JSONBeautifier/master/image/extension-url.PNG " alt="Extension">
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+1. Once icon is clicked, a layout will appear instantly with provided space and buttons. JSON files could also be dragged or copy/paste onto the provided space. Next user can click either on the Beautify button to beautify json file or Minify button to minify json file.
 
-## Versioning
+<img align="center" src="https://raw.githubusercontent.com/jsam6/ChromeExtension-JSONBeautifier/master/image/extension-main.PNG " alt="Extension">
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+#### <u>Beautify</u>
 
-## Authors
+1. When Beautify button is clicked, the extension will beautify and display out the beautified json file on the provided space itself.
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+<img align="center" src="https://raw.githubusercontent.com/jsam6/ChromeExtension-JSONBeautifier/master/image/json-bueatified.PNG " alt="Extension">
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+#### <u>Minify</u>
 
-## License
+1. When Minify button is clicked, the extension will minify and display out the minified json file on the provided space itself. 
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+<img align="center" src="https://raw.githubusercontent.com/jsam6/ChromeExtension-JSONBeautifier/master/image/json-minified.PNG " alt="Extension">
